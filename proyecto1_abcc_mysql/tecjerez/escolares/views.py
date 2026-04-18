@@ -38,7 +38,7 @@ class ModificarAlumno(SuccessMessageMixin, UpdateView):
     model = Alumno
     form = Alumno
     fields = '__all__'
-    def get_success_message(self, cleaned_data):
+    def get_success_url(self):
         return reverse('listar')
 
 #==============CONSULTAS

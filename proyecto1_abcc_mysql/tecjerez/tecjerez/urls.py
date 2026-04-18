@@ -26,5 +26,5 @@ urlpatterns = [
     
     path('alumnos/crear', CrearAlumno.as_view(template_name='alumnos/crear.html'), name='crear'),
     path('alumnos/eliminar/<int:pk>', EliminarAlumno.as_view(), name='eliminar'),
-    path('alumnos/modificar/<int:pk>', ModificarAlumno.as_view(template_name='alumnos/modificar.html'), name='modificar'),
+    path('alumnos/editar/<int:pk>', ModificarAlumno.as_view(template_name='alumnos/modificar.html'), name='modificar'),
 ]
